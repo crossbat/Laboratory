@@ -1,0 +1,23 @@
+.headerContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width : 100vw;
+  height : 80px;
+  background-color: #d4c9be;
+}
+
+.navContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width : 70%;
+  height: 100%;
+  background-color: #d4c9be;
+}
+
+.title{
+  font-size : 30px;
+  color : #030303;
+  background-color: #d4c9be;
+}
