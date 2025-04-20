@@ -1,0 +1,29 @@
+.subTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width : 100vw;
+  height : 200px;
+  margin-top :80px;
+  margin-bottom : 40px;
+  font-size : 20px;
+}
+
+.appContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height : auto;
+  margin-bottom: 150px;
+}
+
+.gridContainer{
+  display : grid;
+  height : 80%;
+  width : 80%;
+  border: 1px solid #000;
+  grid-template-rows : repeat(4, 300px);
+  grid-template-columns : repeat(4, 1fr);
+  gap : 30px;
+}

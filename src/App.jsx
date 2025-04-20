@@ -1,22 +1,18 @@
 import Header from './Components/Commons/Header/header'
 import style from './App.module.css'
-import pages from './Pages/pageInfo.json'
-import PageCard from './Components/LabPages/PageCards'
+import { Router, Routes } from 'react-router'
+import { Route } from 'react-router'
+import ExDetail from './Pages/ExperimentDetail/ExDetail'
+import Home from './Pages/Home/Home'
 
 function App() {
   return (
     <div>
       <Header />
-      <div className={style.subTitle}>
-        <h1>실험 페이지</h1>
-      </div>
-      <div className={style.appContainer}>
-        <div className={style.gridContainer}>
-          {pages.map((page) => (
-            <PageCard id={page.id} name={page.name} description={page.description} keyword={page.keyword} />
-          ))}
-        </div>
-      </div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/:id' element={<ExDetail />} />
+      </Routes>
     </div>
   )
 }
